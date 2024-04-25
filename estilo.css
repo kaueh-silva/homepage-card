@@ -58,7 +58,7 @@ body {
 
 .pricing {
     display: flex;
-    gap: 16px;
+    gap: 40px;
 }
 
 .pricing-plan {
@@ -66,7 +66,15 @@ body {
     background-color: #1f262c;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 12px -6px black;
+    box-shadow: 0 6px 12px -6px #ADD8E6;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plan:hover {
+    scale: 1.05;
+    transition: 1s;
+    box-shadow: 0px 10px 10px 5px #ADD8E6;
 }
 
 .plan-titllt {
@@ -77,4 +85,38 @@ body {
     margin-top: 0px;
     letter-spacing: 2px;
 
+}
+
+.pricing-plan p {
+    margin-top: 0;
+}
+
+.pricing-plan__price {
+    font-size: 34px;
+}
+
+
+.princing-plan__featurea {
+    margin: 0 0 35px 0;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.princing-plan__featurea li::marker {
+    color: #ADD8E6;
+
+}
+
+.princing-plan__cta {
+    text-decoration: none;
+    color: black;
+    background-color: #ADD8E6;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
 }
